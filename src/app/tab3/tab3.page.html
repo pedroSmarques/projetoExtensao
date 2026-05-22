@@ -6,11 +6,13 @@
 
     </ion-button>
 
-    <ion-button class="botao-fechar" (click)="fecharLista()">
+    @if(listaAberta){
+      <ion-button class="botao-fechar" (click)="fecharLista()">
 
-      FECHAR LISTA
+        FECHAR LISTA
 
-    </ion-button>
+      </ion-button>
+    }
   </div>
   @if(listaAberta){
 
